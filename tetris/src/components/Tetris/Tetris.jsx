@@ -113,6 +113,12 @@ const Tetris = () => {
                         </div>
                     )}
                     <StartButton callback={startGame}/>
+                    <div className="touch-controls">
+                        <button onClick={() => movePlayer(-1)}>◀</button>
+                        <button onClick={() => playerRotate(stage, 1)}>⟳</button>
+                        <button onClick={() => movePlayer(1)}>▶</button>
+                        <button onClick={() => dropPlayer()}>▼</button>
+                    </div>
                 </aside>
             </StyledTetris>
         </StyledTetrisWrapper>
