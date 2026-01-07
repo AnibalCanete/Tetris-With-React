@@ -10,6 +10,8 @@ export const StyledStage = styled.div`
     width: 100%;
     max-width: 25vw;
     background: #111;
+    height: auto;
+    aspect-ratio: ${props => props.width} / ${props => props.height};
 
     @media (max-width: 600px) {
         max-width: clamp(280px, 80vw, 360px);

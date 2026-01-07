@@ -8,6 +8,14 @@ body {
   src: url("assets/fonts/Pixel-LCD-7.woff") format("woff");
 }
 
+.stage-wrapper {
+  max-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .touch-controls {
   display: flex;
   justify-content: space-around;
