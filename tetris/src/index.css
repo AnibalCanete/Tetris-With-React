@@ -21,7 +21,7 @@ body {
   border-radius: 0.5rem;
   background-color: #333;
   color: white;
-  border: 2px solid #49a6ea;
+  border: 2px solid #333;
   font-family: Pixel, Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
