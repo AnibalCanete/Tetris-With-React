@@ -11,9 +11,8 @@ body {
 .stage-wrapper {
   display: flex;
   justify-content: center;
-  align-items: ceneter;
-  max-height: 60vh;
-  overflow: hidden;
+  align-items: center;
+  max-height: 55vh;
 }
 
 .touch-controls {

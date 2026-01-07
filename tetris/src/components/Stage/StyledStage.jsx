@@ -8,8 +8,8 @@ export const StyledStage = styled.div`
     border: 2px solid #333;
     width: 100%;
     background: #111;
-    max-width: 25vw;
-    grid-template-rows: repeat(${props => props.height}, calc(25vw / ${props => props.width}));
+    max-width: 90vw;
+    aspect-ratio: ${props => props.width} / ${props => props.height};
 
 
     @media (max-width: 600px) {
@@ -17,9 +17,8 @@ export const StyledStage = styled.div`
         grid-template-rows: repeat(${props => props.height}, calc(90vw / ${props => props.width}));
     }
     
-    @media (max-height: 600px) {
-        max-width: 90vw;
-        grid-template-rows: repeat(${props => props.height}, calc(90vw / ${props => props.width}));
+    @media (min-width: 900px) {
+        max-width: 25vw;
     }
 
 `;

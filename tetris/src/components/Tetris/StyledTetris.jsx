@@ -36,9 +36,11 @@ export const StyledTetris = styled.div`
     padding: 20px;
 
         aside {
-        max-width: 100%;
-        margin-top: 20px;
-        text-align: center;
+            max-width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            padding: 5px;
+            font-size: 0.8rem;
         }
     }
 
