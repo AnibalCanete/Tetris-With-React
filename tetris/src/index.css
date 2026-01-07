@@ -9,11 +9,11 @@ body {
 }
 
 .stage-wrapper {
-  max-height: 60vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: ceneter;
+  max-height: 60vh;
+  overflow: hidden;
 }
 
 .touch-controls {
