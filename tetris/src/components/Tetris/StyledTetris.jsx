@@ -25,48 +25,24 @@ export const StyledTetris = styled.div`
 
     aside {
         width: 100%;
-        max-width: 200px;
+        max-width: 300px;
+        text-align: center;
         display: block;
         padding: 0 20px;
     }
 
     @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
         aside {
             max-width: 100%;
             margin-top: 10px;
             text-align: center;
             padding: 5px;
-            font-size: 0.8rem;
-        }
-    }
-
-    /* Tablet */
-    @media (min-width: 601px) and (max-width: 900px) {
-        padding: 30px;
-        aside {
-        max-width: 180px;
-        }
-    }
-
-    /* Middle Desk */
-    @media (min-width: 901px) and (max-width: 1199px) {
-        padding: 40px;
-        aside {
-        max-width: 200px;
-        }
-    }
-
-    /* Large Desk */
-    @media (min-width: 1200px) {
-        padding: 60px;
-        aside {
-        max-width: 250px;
+            font-size: 0.75rem;
         }
     }
 }
-
 `;

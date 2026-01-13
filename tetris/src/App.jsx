@@ -3,9 +3,9 @@ import Tetris from "./components/Tetris/Tetris";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Tetris/>
-    </div>
+    </main>
   ); 
 };
 

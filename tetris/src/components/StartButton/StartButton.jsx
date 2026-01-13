@@ -16,6 +16,14 @@ const StyledStartButton = styled.button`
     font-size: 1rem;
     outline: none;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+        padding: 10px;
+        font-size: 0.65rem;
+        margin: 0 0 12px 0;
+        border-width: 2px;
+        border-radius: 12px;
+    }
 `;
 
 const StartButton = ({ callback }) => (

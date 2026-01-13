@@ -1,18 +1,22 @@
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+:root {
+  height: 100%;
 }
 
 @font-face {
   font-family: "Pixel";
   src: url("assets/fonts/Pixel-LCD-7.woff") format("woff");
-}
-
-.stage-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 55vh;
 }
 
 .touch-controls {
@@ -34,12 +38,27 @@ body {
 }
 
 @media (max-width: 600px) {
-  #touch-controls {
+  aside {
+    max-width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .touch-controls {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 4px;
+    margin-top: 8px;
   }
-  #touch-controls button {
-    flex: 1 1 40%;
-    margin: 0.3rem;
+
+  .touch-controls button {
+    flex: 1 1 40px;
+    min-width: 40px;
+    padding: 4px 8px;
+    font-size: 1rem;
+    border-radius: 8px;
   }
 }

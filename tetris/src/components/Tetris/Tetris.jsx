@@ -103,9 +103,7 @@ const Tetris = () => {
     return (
         <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e => move(e)} onKeyUp={keyUp}>
             <StyledTetris>
-                <div className="stage-wrapper">
-                    <Stage stage={stage}/>
-                </div>
+                <Stage stage={stage}/>
                 <aside>
                     {gameOver ? (<Display gameOver={gameOver} text="Game Over"/>) : (
                         <div>
